@@ -5,7 +5,7 @@ export default async function UserDetailsPage({ params }: any) {
 
   return (
     <div style={{ display: "flex", flexDirection: "column" }}>
-      <h1>
+      <h1 className="text-3xl font-bold underline">
         [{user.id}] {user.name} ({user.username})
       </h1>
 

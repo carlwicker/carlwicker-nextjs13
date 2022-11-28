@@ -5,7 +5,7 @@ export default async function UsersPage() {
 
   return (
     <>
-      <h1>Users</h1>
+      <h1 className="text-3xl font-bold underline text-red-900">Users</h1>
       <div style={{ display: "flex", flexDirection: "column" }}>
         {users.map((user: any, key: number) => {
           return (
