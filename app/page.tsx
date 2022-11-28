@@ -5,7 +5,6 @@ export default async function Homepage() {
     <div>
       <h1>Homepage</h1>
       <p>Some content</p>
-      <Link href={"/users"}>Users</Link>
     </div>
   );
 }

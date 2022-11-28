@@ -10,7 +10,8 @@ export default async function UsersPage() {
         {users.map((user: any, key: number) => {
           return (
             <div style={{ display: "flex", flexDirection: "row" }} key={key}>
-              {user.name} - <a href={`/users/${user.id}`}>Details</a>
+              {user.name} -{" "}
+              <a href={`/users/${encodeURIComponent(user.id)}`}>Details</a>
             </div>
           );
         })}
