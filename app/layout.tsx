@@ -9,13 +9,7 @@ export default function RootLayout({
   return (
     <html>
       <head />
-      <body>
-        <nav>
-          <Link href="/">Home</Link> | <Link href={"/users"}>Users</Link>
-        </nav>
-
-        {children}
-      </body>
+      <body className="m-5">{children}</body>
     </html>
   );
 }
