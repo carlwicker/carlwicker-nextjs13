@@ -18,23 +18,14 @@ export default function RootLayout({
     <html>
       <head />
       <body>
-        {/* <div className="absolute w-full z-10 bg-transparent">
+        <div className="absolute w-full z-10 bg-transparent">
           <Header isOpen={isOpen} setIsOpen={setIsOpen} />
           {isOpen && <MobileMenu />}
         </div>
 
-       
-
-        <img
-          src="./img/pic1.webp"
-          alt=""
-          className="absolute z-0"
-          style={{ top: "-50px" }}
-        />
-
         <div className="absolute z-20 h-full" style={{ bottom: "200px" }}>
           <Footer />
-        </div> */}
+        </div>
         {children}
       </body>
     </html>

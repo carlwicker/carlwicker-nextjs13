@@ -15,8 +15,16 @@ export default function ParalaxTest() {
 
   return (
     <>
-      <section className="bg-red-700" id="paralax">
-        <h2>Div 1</h2>
+      <section id="paralax">
+        <div className="flex flex-col justify-center w-1/2 text-gray-800">
+          <h1 className="px-5 text-4xl lg:text-6xl uppercase font-black text-black break-all">
+            Designer / Photographer / Front End Web Developer
+          </h1>
+          <h2 className=" px-5 lg:p-5 lg:text-2xl text-bold font-thin bg-white ">
+            Figma, HTML, CSS, TailwindCSS, JavaScript, ReactJS, NextJS &
+            Firebase Cloud Architechure.
+          </h2>
+        </div>
       </section>
       <section className="bg-blue-700">
         <h2>Div 2</h2>
