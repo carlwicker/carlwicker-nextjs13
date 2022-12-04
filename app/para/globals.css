@@ -14,7 +14,7 @@ section {
   height: 100vh;
 }
 
-h1 {
+#section1 {
   background-color: white;
   background-blend-mode: color-burn;
   mix-blend-mode: lighten;

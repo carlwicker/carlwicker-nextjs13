@@ -9,11 +9,11 @@ interface IHeader {
 export default function Header({ setIsOpen, isOpen }: IHeader) {
   return (
     <div className="container flex mx-auto p-5 text-black justify-between bg-transparent items-center font-1 h-5">
-      <h1 className="text-base font-bold lowercase cursor-pointer">
+      <div className="text-base font-thin titlecase">
         <Link href={"/"} className="cursor-pointer">
-          http://carlwicker.co.uk
+          Carl Wicker
         </Link>
-      </h1>
+      </div>
       <nav className="hidden lg:flex gap-3 font-thin">
         <Link href={"/about"}>
           <button className="text-xs p-2 hover:text-gray-500 transition ease-in duration-200 ">
