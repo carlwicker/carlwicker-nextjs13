@@ -1,0 +1,43 @@
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  width: 100%;
+  height: 100vh;
+}
+
+h2 {
+  font-size: 60px;
+  background-color: gray;
+  padding: 8px 24px;
+  border-radius: 16px;
+}
+
+section:nth-child(1) {
+  background-image: url("/img/pic2.webp");
+  background-size: cover;
+}
+
+section:nth-child(2) {
+  background-color: maroon;
+}
+
+section:nth-child(3) {
+  height: 400px;
+  background-image: url("/img/pic1.webp");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+section:nth-child(3) {
+  background-color: darkolivegreen;
+}

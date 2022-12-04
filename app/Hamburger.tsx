@@ -1,12 +1,12 @@
 export default function Hamburger() {
   return (
     <svg
-      className="cursor-pointer hover:fill-green-500 transition ease-in duration-200 lg:hidden"
+      className="cursor-pointer hover:fill-gray-500 transition ease-in duration-200 lg:hidden"
       width="25px"
       height="25px"
       viewBox="0 0 16 16"
       xmlns="http://www.w3.org/2000/svg"
-      fill="white"
+      fill="black"
     >
       <title>icn/menu</title>
       <path

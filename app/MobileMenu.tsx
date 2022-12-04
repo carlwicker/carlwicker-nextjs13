@@ -2,22 +2,26 @@ import Link from "next/link";
 
 export default function MobileMenu() {
   return (
-    <div className=" text-white font-extralight uppercase lg:hidden">
+    <div className=" text-black font-extralight uppercase lg:hidden z-40">
       <div className="container  mx-auto p-5">
         <div className="flex flex-col">
-          <div className="cursor-pointer hover:text-green-400">
-            <Link href={"/"}>Home</Link>
-          </div>
-          <div className="cursor-pointer hover:text-green-500">
+          <Link
+            href={"/"}
+            className="block cursor-pointer text-xs py-1 hover:text-gray-500 transition ease-in duration-200 capitalize"
+          >
+            Home
+          </Link>
+
+          <div className="text-xs py-1 hover:text-gray-500 transition ease-in duration-200 capitalize">
             <Link href={"/about"}>About</Link>
           </div>
-          <div className="cursor-pointer hover:text-green-600">
+          <div className="text-xs py-1 hover:text-gray-500 transition ease-in duration-200 capitalize">
             <Link href={"/projects"}>Projects</Link>
           </div>
-          <div className="cursor-pointer hover:text-green-700">
+          <div className="text-xs py-1 hover:text-gray-500 transition ease-in duration-200 capitalize">
             <Link href={"/resume"}>Resume</Link>
           </div>
-          <div className="cursor-pointer hover:text-green-800">
+          <div className="text-xs py-1 hover:text-gray-500 transition ease-in duration-200 capitalize">
             <Link href={"/contact"}>Contact</Link>
           </div>
         </div>
