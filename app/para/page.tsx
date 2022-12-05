@@ -8,14 +8,14 @@ export default function ParalaxTest() {
     const parallax: any = document.getElementById("paralax");
 
     window.addEventListener("scroll", () => {
-      let offset = window.pageYOffset;
+      let offset = window.pageYOffset - 400;
       parallax.style.backgroundPositionY = offset * 0.7 + "px";
     });
   }, []);
 
   return (
     <>
-      <section id="paralax">
+      <section id="paralax" style={{ backgroundPositionY: "-280px" }}>
         <div
           className="flex flex-col justify-center w-1/2 text-gray-800 rotate-6"
           id="section1"

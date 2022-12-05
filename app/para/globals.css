@@ -20,13 +20,14 @@ section {
   mix-blend-mode: lighten;
 }
 
-section:nth-child(1) {
-  background-image: url("/img/pic1.webp");
-  background-size: cover;
-  transition: ease-in;
+#section1:hover {
+  scale: 110%;
+  transition: ease-out 10s;
+  rotate: -1deg;
+  background-blend-mode: hard-light;
 }
 
-section:nth-child(1):hover {
+section:nth-child(1) {
   background-image: url("/img/pic1.webp");
   background-size: cover;
 }
@@ -44,4 +45,8 @@ section:nth-child(3) {
 
 section:nth-child(3) {
   background-color: darkolivegreen;
+}
+
+#paralax {
+  background-position-y: -400px;
 }
