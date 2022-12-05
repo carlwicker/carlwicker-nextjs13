@@ -1,11 +1,5 @@
-import ParalaxTest from "./para/page";
+import ParalaxTest from "./paralax/page";
 
 export default function Homepage() {
-  return (
-    <>
-      <div>
-        <ParalaxTest />
-      </div>
-    </>
-  );
+  return <ParalaxTest />;
 }

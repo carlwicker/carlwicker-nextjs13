@@ -4,8 +4,6 @@ import "./globals.css";
 import { useState } from "react";
 import Header from "./Header";
 import MobileMenu from "./MobileMenu";
-import Footer from "./Footer";
-import ParalaxTest from "./para/page";
 
 export default function RootLayout({
   children,
@@ -16,15 +14,16 @@ export default function RootLayout({
 
   return (
     <html>
-      <head />
+      <head>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1"
+        ></meta>
+      </head>
       <body>
         <div className="absolute w-full z-10 bg-transparent">
           <Header isOpen={isOpen} setIsOpen={setIsOpen} />
           {isOpen && <MobileMenu />}
-        </div>
-
-        <div className="absolute z-20 h-full" style={{ bottom: "200px" }}>
-          <Footer />
         </div>
         {children}
       </body>
