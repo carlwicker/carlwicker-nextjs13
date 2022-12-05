@@ -20,7 +20,7 @@ export default function Section1() {
       }}
       className="flex w-full bg-cover items-center min-h-screen justify-center"
     >
-      <div className="flex opacity-0 hover:opacity-100 flex-col ease-in duration-1000  mx-auto justify-center align-middle">
+      <div className="flex flex-col ease-in duration-1000  mx-auto justify-center align-middle">
         <h1
           className="uppercase font-black text-white text-9xl tracking-tighter scale-150 drop-shadow-md mx-auto"
           style={{ fontFamily: "times" }}
