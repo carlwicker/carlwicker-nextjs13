@@ -18,11 +18,12 @@ section {
   background-color: white;
   background-blend-mode: color-burn;
   mix-blend-mode: lighten;
+  transition: ease-out 1s;
 }
 
 #section1:hover {
   scale: 110%;
-  transition: ease-out 10s;
+  transition: ease-out 5s;
   rotate: -1deg;
   background-blend-mode: hard-light;
 }
@@ -33,7 +34,7 @@ section:nth-child(1) {
 }
 
 section:nth-child(2) {
-  background-color: maroon;
+  background-color: #ddd;
 }
 
 section:nth-child(3) {
@@ -43,10 +44,20 @@ section:nth-child(3) {
   background-attachment: fixed;
 }
 
-section:nth-child(3) {
-  background-color: darkolivegreen;
+section:nth-child(4) {
+  background-color: #111;
 }
 
 #paralax {
-  background-position-y: -400px;
+  background-position-y: -280px;
+}
+
+#homehead {
+  position: absolute;
+  font-size: 250px;
+  letter-spacing: -37px;
+  left: -20px;
+  top: -300px;
+  color: white;
+  mix-blend-mode: darken;
 }

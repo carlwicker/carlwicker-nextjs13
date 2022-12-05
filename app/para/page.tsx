@@ -15,13 +15,13 @@ export default function ParalaxTest() {
 
   return (
     <>
-      <section id="paralax" style={{ backgroundPositionY: "-280px" }}>
+      <section id="paralax">
         <div
-          className="flex flex-col justify-center w-1/2 text-gray-800 rotate-6"
+          className="flex flex-col justify-center text-gray-800 rotate-6"
           id="section1"
         >
-          <h1 className="px-5 text-4xl lg:text-6xl uppercase font-black text-black break-words ">
-            Graphic Designer / Photographer / Front End Web Developer
+          <h1 className="uppercase font-black text-black" id="homehead">
+            UX UI DEV
           </h1>
           <h2 className=" px-5 lg:p-5 lg:text-2xl text-bold font-thin bg-white ">
             Figma, HTML, CSS, TailwindCSS, JavaScript, ReactJS, NextJS &
