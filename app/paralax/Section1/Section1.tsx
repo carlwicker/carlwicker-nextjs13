@@ -1,14 +1,34 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
 
 export default function Section1() {
-  useEffect(() => {
-    const parallax: any = document.getElementById("paralax");
+  const headerRef = useRef<HTMLInputElement | null>(null);
 
-    window.addEventListener("scroll", () => {
-      let offset = window.pageYOffset - 400;
-      parallax.style.backgroundPositionY = offset * 0.7 + "px";
-    });
+  useEffect(() => {
+    gsap.fromTo(
+      "#head",
+      {
+        rotation: -9,
+        x: 20,
+        autoAlpha: 0,
+      },
+      {
+        rotation: 6,
+        x: 0,
+        autoAlpha: 1,
+        duration: 0.5,
+      }
+    );
   }, []);
+
+  // useEffect(() => {
+  //   const parallax: any = document.getElementById("paralax");
+
+  //   window.addEventListener("scroll", () => {
+  //     let offset = window.pageYOffset - 400;
+  //     parallax.style.backgroundPositionY = offset * 0.7 + "px";
+  //   });
+  // }, []);
 
   return (
     <section
@@ -20,7 +40,11 @@ export default function Section1() {
       }}
       className="flex w-full bg-cover items-center min-h-screen justify-center"
     >
-      <div className="flex flex-col ease-in duration-1000  mx-auto justify-center align-middle">
+      <div
+        ref={headerRef}
+        id="head"
+        className="head flex flex-col mx-auto justify-center align-middle opacity-0"
+      >
         <h1
           className="uppercase font-black text-white text-9xl tracking-tighter scale-150 drop-shadow-md mx-auto"
           style={{ fontFamily: "times" }}
