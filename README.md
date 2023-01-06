@@ -1,3 +1,3 @@
-Fucking around with NextJS 13
+Trying NextJS 13
 
 https://carlwicker-nextjs13.web.app
